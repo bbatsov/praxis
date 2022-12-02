@@ -1,13 +1,13 @@
-# praxis
+# Programming Praxis
 
-A Clojure library designed to ... well, that part is up to you.
+> Praxis makes perfect.
 
-## Usage
+## What?
 
-FIXME
+Some Clojure solutions to programming challenges from [Programming Praxis](https://programmingpraxis.com/).
 
 ## License
 
-Copyright © 2012 FIXME
+Copyright © 2012 Bozhidar Batsov
 
 Distributed under the Eclipse Public License, the same as Clojure.
