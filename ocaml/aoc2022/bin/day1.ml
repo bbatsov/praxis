@@ -15,6 +15,6 @@ let max_calories = calories_per_elf input_lines |> max |> result
 
 let () = Printf.printf "Max calories per elf: %d\n" max_calories
 
-let top_calories = calories_per_elf input_lines |> List.sort compare |> List.rev |> first_three |> List.fold_left ( + ) 0
+let top_calories = calories_per_elf input_lines |> List.sort compare |> List.rev |> first_three |> sum
 
 let () = Printf.printf "Sum of top 3 calories per elf: %d\n" top_calories
