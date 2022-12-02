@@ -29,3 +29,5 @@ let result opt =
 let first_three = function
   | [] | [ _ ] | [ _ ; _ ] -> []
   | x :: y :: z :: _ -> [x; y; z]
+
+let sum = List.fold_left ( + ) 0
