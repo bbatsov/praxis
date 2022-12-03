@@ -5,12 +5,15 @@ let chomp s =
   else
     s
 
-let lines file =
-  let contents = match file with
+let contents file =
+  let content = match file with
   | "-" -> In_channel.input_all In_channel.stdin
   | file -> In_channel.with_open_bin file In_channel.input_all
   in
-  String.split_on_char '\n' (chomp contents)
+  (chomp content)
+
+let lines file =
+  String.split_on_char '\n' (contents file)
 
 let max lst =
   let rec aux n = function

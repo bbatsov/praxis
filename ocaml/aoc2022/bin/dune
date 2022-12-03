@@ -1,3 +1,6 @@
 (executables
- (names day1 day2)
- (libraries util))
+ (names day1 day2 day03)
+ (libraries util containers))
+(env
+    (dev
+      (flags (:standard -warn-error -A))))
