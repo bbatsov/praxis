@@ -23,7 +23,7 @@ let overlap3 str1 str2 str3 =
     [] str1
 
 let score ch =
-  if (int_of_char ch >= 97) then (int_of_char ch) - 96
+  if ch > 'Z' then (int_of_char ch) - 96
   else (int_of_char ch) - 38
 
 let part1 = input |> List.map split_string |> List.map (fun pair -> let (s1, s2) = pair in (overlap s1 s2)) |> List.map List.hd |> List.map score |> sum
